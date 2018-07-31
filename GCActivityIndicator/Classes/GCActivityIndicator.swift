@@ -25,11 +25,19 @@ public class GCActivityIndicator: UIView {
         }
     }
 
+
+    /// Required constructor
+    ///
+    /// - Parameter aDecoder: An unarchiver object.
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         configureView()
     }
 
+
+    /// Construct with a frame
+    ///
+    /// - Parameter frame: Frame to assign to the view.
     public override init(frame: CGRect) {
         super.init(frame: frame)
         configureView()
