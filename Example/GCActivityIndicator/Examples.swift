@@ -18,21 +18,25 @@ let examples = [
     ],
 
     [
-        ActivityRing(color: UIColor(rgb: 0x0f3c6c).cgColor, start: 0, end: 0.6, clockwise: true),
+        ActivityRing(color: UIColor(rgb: 0x0f3c6c).cgColor, start: 0, end: 0.6, clockwise: true, timingFunction: CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)),
         ActivityRing(color: UIColor(rgb: 0xef4931).cgColor, start: 0.5, end: 1, clockwise: true),
         ActivityRing(color: UIColor(rgb: 0x99bfbc).cgColor, start: 0.2, end: 0.6, clockwise: false),
-        ActivityRing(color: UIColor(rgb: 0xffd300).cgColor, start: 0.4, end: 0.8, clockwise: false),
+        ActivityRing(color: UIColor(rgb: 0xffd300).cgColor, start: 0.4, end: 0.8, clockwise: false)
         ],
 
     [
         ActivityRing(color: UIColor.blue.cgColor, start: 0, end: 1, clockwise: true, lineWidth: 0.09),
         ActivityRing(color: UIColor.green.cgColor, start: 0.2, end: 0.8, clockwise: false, lineWidth: 0.1),
-        ActivityRing(color: UIColor.green.cgColor, start: 0, end: 0.5, clockwise: true, lineWidth: 0.11, overlaps: true),
+        ActivityRing(color: UIColor.green.cgColor, start: 0, end: 0.5, clockwise: true, lineWidth: 0.11, overlaps: true)
         ],
 
     [
         ActivityRing(color: UIColor(rgb: 0x0f3c6c).cgColor, start: 0, end: 0.5, clockwise: true, lineWidth: 0.13),
-        ActivityRing(color: UIColor(rgb: 0xef4931).cgColor, start: 0.5, end: 1, clockwise: true, lineWidth: 0.13, overlaps: true),
+        ActivityRing(color: UIColor(rgb: 0xef4931).cgColor, start: 0.5, end: 1, clockwise: true, lineWidth: 0.13, overlaps: true)
+        ],
+    [
+        ActivityRing(color: UIColor(rgb: 0x0f3c6c).cgColor, start: 0, end: 0.4, clockwise: true, lineWidth: 0.13),
+        ActivityRing(color: UIColor(rgb: 0xef4931).cgColor, start: 0.6, end: 1, clockwise: true, lineWidth: 0.13, overlaps: true, timingFunction: CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut))
         ]
 ]
 
@@ -53,8 +57,3 @@ fileprivate extension UIColor {
         )
     }
 }
-
-
-
-
-

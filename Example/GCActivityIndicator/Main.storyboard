@@ -19,15 +19,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32E-42-glN">
-                                <rect key="frame" x="144" y="617" width="86" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32E-42-glN">
+                                <rect key="frame" x="170" y="617" width="34" height="30"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
                                     <action selector="toggleAnimating" destination="FDz-t4-eRF" eventType="touchUpInside" id="P9J-MG-ZJh"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XAm-5V-Cd6" customClass="GCActivityIndicator" customModule="GCActivityIndicator">
-                                <rect key="frame" x="165" y="137.5" width="44" height="44"/>
+                                <rect key="frame" x="165" y="189.5" width="44" height="44"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="44" id="ObY-hN-TZX"/>
@@ -35,7 +35,7 @@
                                 </constraints>
                             </view>
                             <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cds-1A-PWt" customClass="GCActivityIndicator" customModule="GCActivityIndicator">
-                                <rect key="frame" x="165" y="229.5" width="44" height="44"/>
+                                <rect key="frame" x="165" y="255.5" width="44" height="44"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="cds-1A-PWt" secondAttribute="height" multiplier="1:1" id="C5g-0e-3D6"/>
@@ -51,26 +51,37 @@
                                 </constraints>
                             </view>
                             <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qJR-Yf-8Fo" customClass="GCActivityIndicator" customModule="GCActivityIndicator">
-                                <rect key="frame" x="165" y="413.5" width="44" height="44"/>
+                                <rect key="frame" x="165" y="387.5" width="44" height="44"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="qJR-Yf-8Fo" secondAttribute="height" multiplier="1:1" id="Hph-lU-Gsr"/>
                                     <constraint firstAttribute="width" constant="44" id="rdc-tO-Olk"/>
                                 </constraints>
                             </view>
+                            <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jfl-fG-V9o" customClass="GCActivityIndicator" customModule="GCActivityIndicator">
+                                <rect key="frame" x="165" y="453.5" width="44" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Jfl-fG-V9o" secondAttribute="height" multiplier="1:1" id="dlg-pz-ndD"/>
+                                    <constraint firstAttribute="width" constant="44" id="vHk-02-spg"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="cds-1A-PWt" firstAttribute="centerX" secondItem="XAm-5V-Cd6" secondAttribute="centerX" id="3pp-zb-Q51"/>
-                            <constraint firstItem="qJR-Yf-8Fo" firstAttribute="top" secondItem="Idg-nG-Am1" secondAttribute="bottom" constant="48" id="502-PG-5oD"/>
+                            <constraint firstItem="qJR-Yf-8Fo" firstAttribute="top" secondItem="Idg-nG-Am1" secondAttribute="bottom" constant="22" id="502-PG-5oD"/>
                             <constraint firstItem="Idg-nG-Am1" firstAttribute="centerX" secondItem="cds-1A-PWt" secondAttribute="centerX" id="6CG-0X-UJW"/>
-                            <constraint firstItem="cds-1A-PWt" firstAttribute="top" secondItem="XAm-5V-Cd6" secondAttribute="bottom" constant="48" id="8KF-kN-gw1"/>
+                            <constraint firstItem="cds-1A-PWt" firstAttribute="top" secondItem="XAm-5V-Cd6" secondAttribute="bottom" constant="22" id="8KF-kN-gw1"/>
                             <constraint firstItem="Idg-nG-Am1" firstAttribute="centerY" secondItem="7Na-ru-0sW" secondAttribute="centerY" id="9Ot-Aj-yaP"/>
                             <constraint firstItem="7Na-ru-0sW" firstAttribute="bottom" secondItem="32E-42-glN" secondAttribute="bottom" constant="20" id="CCc-nu-34k"/>
+                            <constraint firstItem="Jfl-fG-V9o" firstAttribute="top" secondItem="qJR-Yf-8Fo" secondAttribute="bottom" constant="22" id="ERe-9c-zel"/>
+                            <constraint firstItem="Jfl-fG-V9o" firstAttribute="width" secondItem="Jfl-fG-V9o" secondAttribute="height" multiplier="1:1" id="LcK-Tv-pMC"/>
                             <constraint firstItem="Idg-nG-Am1" firstAttribute="centerX" secondItem="7Na-ru-0sW" secondAttribute="centerX" id="Vlf-Nv-fvU"/>
                             <constraint firstItem="qJR-Yf-8Fo" firstAttribute="centerX" secondItem="Idg-nG-Am1" secondAttribute="centerX" id="dI8-7k-iMs"/>
                             <constraint firstItem="32E-42-glN" firstAttribute="centerX" secondItem="7Na-ru-0sW" secondAttribute="centerX" id="thf-Nk-pbp"/>
-                            <constraint firstItem="Idg-nG-Am1" firstAttribute="top" secondItem="cds-1A-PWt" secondAttribute="bottom" constant="48" id="u2s-u7-RZ9"/>
+                            <constraint firstItem="Idg-nG-Am1" firstAttribute="top" secondItem="cds-1A-PWt" secondAttribute="bottom" constant="22" id="u2s-u7-RZ9"/>
+                            <constraint firstItem="Jfl-fG-V9o" firstAttribute="centerX" secondItem="qJR-Yf-8Fo" secondAttribute="centerX" id="zsN-VM-dID"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7Na-ru-0sW"/>
                     </view>
