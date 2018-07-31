@@ -26,7 +26,6 @@ class ViewController: UIViewController {
         configureActivityIndicators()
     }
 
-
     @IBAction func toggleAnimating() {
         if animating {
             animateButton.setTitle("Start", for: .normal)
@@ -50,4 +49,3 @@ class ViewController: UIViewController {
         }
     }
 }
-

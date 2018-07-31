@@ -52,7 +52,7 @@ class ActivityRingLayer: CAShapeLayer {
         animation.isRemovedOnCompletion = false
         animation.fromValue = 0
         animation.toValue = 2 * Double.pi * (ring.clockwise ? 1 : -1)
-        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)
+        animation.timingFunction = ring.timingFunction
         animation.repeatCount = Float.infinity
         currentAnimation = animation
     }

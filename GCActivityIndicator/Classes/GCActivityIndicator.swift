@@ -35,7 +35,6 @@ public class GCActivityIndicator: UIView {
         configureView()
     }
 
-
     /// Stops all animation of ActivityRings.
     public func stopAnimating() {
         isAnimating = false
